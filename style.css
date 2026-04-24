@@ -48,11 +48,15 @@ body {
     background: rgba(0, 0, 0, 0.85);
     color: white;
 
-    display: flex;
+    display: none; /* IMPORTANT */
     align-items: center;
     justify-content: center;
 
     z-index: 99999;
+}
+
+#winScreen.show {
+    display: flex;
 }
 
 .winContent {
