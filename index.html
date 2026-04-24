@@ -1,45 +1,46 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <title>Parcours interactif</title>
+<meta charset="UTF-8">
+<title>Parcours interactif</title>
 
-    <link rel="stylesheet" href="style.css" />
-
-    <!-- Leaflet CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 </head>
-    
-<div id="winScreen" class="hidden">
-  <div class="winContent">
 
-    <img id="medal" src="medal.png" alt="Médaille" />
-
-    <h1>🎉 Victoire !</h1>
-    <p>Tu as terminé le parcours 🔓</p>
-
-    <button id="restartBtn">Rejouer</button>
-  </div>
-</div>
-
-<canvas id="confetti"></canvas>
-
-<audio id="winSound" src="win.mp3" preload="auto"></audio>
-    
-<div id="quizBox" class="hidden">
-  <div id="quizQuestion"></div>
-
-  <input type="text" id="quizInput" placeholder="Ta réponse..." />
-
-  <button id="quizBtn">Valider</button>
-
-  <div id="quizFeedback"></div>
-</div>
 <body>
 
 <div id="map"></div>
 
-<!-- Leaflet JS -->
+<!-- OVERLAY QUESTION -->
+<div id="quizBox" class="hidden">
+  <div class="quizContent">
+
+    <p class="lorem">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+
+    <div id="quizQuestion"></div>
+
+    <input type="text" id="quizInput" placeholder="Ta réponse...">
+    <button id="quizBtn">Valider</button>
+
+  </div>
+</div>
+
+<!-- WIN SCREEN -->
+<div id="winScreen">
+  <div class="winContent">
+    <img src="medal.png" id="medal">
+    <h1>🎉 Victoire !</h1>
+    <p>Parcours réussi 🔓</p>
+    <button onclick="location.reload()">Rejouer</button>
+  </div>
+</div>
+
+<canvas id="confetti"></canvas>
+<audio id="winSound" src="win.mp3"></audio>
+
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 <script src="script.js"></script>
 
