@@ -72,11 +72,13 @@ function openQuestion(index) {
 
     const p = points[index];
 
+    // on affiche UNIQUEMENT ici
     quizBox.classList.remove("hidden");
+
     quizQuestion.innerText = p.question;
     quizInput.value = "";
 
-    quizBtn.onclick = () => {
+    quizBtn.onclick = function () {
 
         answers[index] = quizInput.value;
 
@@ -84,17 +86,16 @@ function openQuestion(index) {
 
         currentStep++;
 
-        // active le suivant
         if (markers[currentStep]) {
             markers[currentStep].setOpacity(1);
         }
 
-        // fin du jeu
         if (currentStep === points.length) {
             checkFinal();
         }
     };
 }
+
 
 // === VALIDATION FINALE ===
 function checkFinal(){
