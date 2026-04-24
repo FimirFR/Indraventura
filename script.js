@@ -34,8 +34,39 @@ const points = [
 let currentStep = 0;
 let currentMarker = null;
 
+// UI
+const quizBox = document.getElementById("quizBox");
+const quizQuestion = document.getElementById("quizQuestion");
+const quizInput = document.getElementById("quizInput");
+const quizBtn = document.getElementById("quizBtn");
+const quizFeedback = document.getElementById("quizFeedback");
+
 function normalize(str) {
     return str.toLowerCase().trim();
+}
+
+function showQuiz(point, callback) {
+    quizBox.classList.remove("hidden");
+
+    quizQuestion.textContent = point.question;
+    quizInput.value = "";
+    quizFeedback.textContent = "";
+
+    quizBtn.onclick = function () {
+        const userAnswer = quizInput.value;
+
+        if (!userAnswer) return;
+
+        if (normalize(userAnswer) === normalize(point.answer)) {
+            quizFeedback.textContent = "✅ Bonne réponse !";
+            setTimeout(() => {
+                quizBox.classList.add("hidden");
+                callback(true);
+            }, 800);
+        } else {
+            quizFeedback.textContent = "❌ Mauvaise réponse";
+        }
+    };
 }
 
 function showPoint(index) {
@@ -45,43 +76,33 @@ function showPoint(index) {
 
     currentMarker = L.marker(point.coords)
         .addTo(map)
-        .bindPopup("<b>" + point.name + "</b><br>Clique pour répondre")
+        .bindPopup(point.name)
         .openPopup();
 
     currentMarker.on('click', function () {
-        const userAnswer = prompt(point.question);
+        showQuiz(point, function (success) {
+            if (success) {
+                map.removeLayer(currentMarker);
 
-        if (!userAnswer) return;
+                currentStep++;
 
-        if (normalize(userAnswer) === normalize(point.answer)) {
-            alert("✅ Bonne réponse !");
-            map.removeLayer(currentMarker);
-
-            currentStep++;
-
-            if (currentStep < points.length) {
-                showPoint(currentStep);
-            } else {
-                revealSecret();
+                if (currentStep < points.length) {
+                    showPoint(currentStep);
+                } else {
+                    revealSecret();
+                }
             }
-
-        } else {
-            alert("❌ Mauvaise réponse !");
-        }
+        });
     });
 }
 
 function revealSecret() {
     const secretCoords = [46.598100, 1.600000];
 
-    const secretMarker = L.marker(secretCoords)
+    L.marker(secretCoords)
         .addTo(map)
-        .bindPopup("🔒 Point secret débloqué !")
+        .bindPopup("🎉 Point final débloqué !")
         .openPopup();
-
-    secretMarker.on('click', function () {
-        alert("🎉 Bravo ! Tu as terminé le parcours !");
-    });
 
     map.setView(secretCoords, 19);
 }
