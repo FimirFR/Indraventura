@@ -1,167 +1,136 @@
-const winSound = document.getElementById("winSound");
+const map = L.map('map').setView([46.597509, 1.599967], 18);
 
-const canvas = document.getElementById("confetti");
-const ctx = canvas.getContext("2d");
+// fond OSM
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png')
+.addTo(map);
 
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
+// === GEOJSON (plan bâtiment) ===
+fetch('data.geojson')
+.then(res => res.json())
+.then(data => {
+    L.geoJSON(data, {
+        style: {color: "#3388ff"}
+    }).addTo(map);
+});
 
-let confetti = [];
+// === QUESTIONS ===
+const points = [
+    {name:"Entrée", coords:[46.597509,1.599967], question:"Quel mot clé permet de commencer ?", answer:"depart"},
+    {name:"Pause", coords:[46.597662,1.599838], question:"Que fait-on ?", answer:"pause"},
+    {name:"Robot", coords:[46.597828,1.599154], question:"Que fait-il ?", answer:"souder"},
+    {name:"Chaîne", coords:[46.598230,1.599380], question:"Elle sert à quoi ?", answer:"produire"}
+];
 
-function createConfetti() {
-    for (let i = 0; i < 120; i++) {
-        confetti.push({
-            x: Math.random() * canvas.width,
-            y: Math.random() * canvas.height - canvas.height,
-            r: Math.random() * 6 + 2,
-            d: Math.random() * 10 + 5,
-            color: `hsl(${Math.random() * 360}, 70%, 60%)`
-        });
-    }
-}
+let answers = [];
+let markers = [];
+let currentStep = 0;
 
-function drawConfetti() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
+// UI
+const quizBox = document.getElementById("quizBox");
+const quizQuestion = document.getElementById("quizQuestion");
+const quizInput = document.getElementById("quizInput");
+const quizBtn = document.getElementById("quizBtn");
 
-    confetti.forEach(c => {
-        ctx.beginPath();
-        ctx.fillStyle = c.color;
-        ctx.fillRect(c.x, c.y, c.r, c.r);
+function normalize(s){return s.toLowerCase().trim();}
 
-        c.y += c.d;
+// === MARKERS ===
+points.forEach((p,i)=>{
+    let m = L.marker(p.coords).addTo(map).bindPopup(p.name);
+    markers.push(m);
 
-        if (c.y > canvas.height) {
-            c.y = -10;
-            c.x = Math.random() * canvas.width;
+    if(i!==0) m.setOpacity(0.3);
+
+    m.on("click", ()=>{
+        if(i!==currentStep){
+            alert("🔒 verrouillé");
+            return;
+        }
+
+        quizBox.classList.remove("hidden");
+        quizQuestion.innerText = p.question;
+        quizInput.value = "";
+
+        quizBtn.onclick = ()=>{
+            answers[i] = quizInput.value;
+            quizBox.classList.add("hidden");
+
+            currentStep++;
+            if(markers[currentStep]) markers[currentStep].setOpacity(1);
+
+            if(currentStep === points.length){
+                checkFinal();
+            }
+        };
+    });
+});
+
+// === VALIDATION FINALE ===
+function checkFinal(){
+
+    let success = true;
+
+    points.forEach((p,i)=>{
+        if(normalize(answers[i]) !== normalize(p.answer)){
+            success = false;
         }
     });
 
-    requestAnimationFrame(drawConfetti);
-}
-
-const map = L.map('map').setView([46.597509, 1.599967], 18);
-
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '© OpenStreetMap'
-}).addTo(map);
-
-const winScreen = document.getElementById("winScreen");
-const restartBtn = document.getElementById("restartBtn");
-
-restartBtn.onclick = () => location.reload();
-
-const points = [
-    {
-        name: "Entrée",
-        coords: [46.597509, 1.599967],
-        question: "Quel mot clé permet de commencer ?",
-        answer: "depart"
-    },
-    {
-        name: "Salle de pause",
-        coords: [46.597662, 1.599838],
-        question: "Que fait-on dans une salle de pause ?",
-        answer: "pause"
-    },
-    {
-        name: "Robot de soudure",
-        coords: [46.597828, 1.599154],
-        question: "Que fait un robot de soudure ?",
-        answer: "souder"
-    },
-    {
-        name: "Chaîne TS",
-        coords: [46.598230, 1.599380],
-        question: "Une chaîne de production sert à quoi ?",
-        answer: "produire"
+    if(success){
+        revealSecret();
+    } else {
+        alert("❌ Certaines réponses sont fausses !");
     }
-];
-
-let currentStep = 0;
-let markers = [];
-
-function normalize(str) {
-    return str.toLowerCase().trim();
 }
 
-function setLocked(marker) {
-    marker.setOpacity(0.4);
+// === SECRET ===
+function revealSecret(){
+    L.marker([46.598100,1.600000])
+    .addTo(map)
+    .bindPopup("🔓 Secret")
+    .openPopup();
+
+    showWin();
 }
 
-function setActive(marker) {
-    marker.setOpacity(1);
-}
+// === WIN ===
+const winScreen = document.getElementById("winScreen");
+const winSound = document.getElementById("winSound");
 
-function showWinScreen() {
+function showWin(){
     winScreen.classList.add("show");
+    winSound.play().catch(()=>{});
 
-    // 🎊 confettis
-    createConfetti();
-    drawConfetti();
-
-    // 🔊 son
-    winSound.play().catch(() => {
-        console.log("Autoplay bloqué (normal sur mobile)");
-    });
+    startConfetti();
 }
 
-function revealSecret() {
-    const secretCoords = [46.598100, 1.600000];
+// === CONFETTI ===
+const canvas = document.getElementById("confetti");
+const ctx = canvas.getContext("2d");
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
 
-    L.marker(secretCoords)
-        .addTo(map)
-        .bindPopup("🔓 Point final débloqué !")
-        .openPopup();
+let confetti=[];
 
-    map.setView(secretCoords, 19);
-
-    showWinScreen();
-}
-
-function createMarkers() {
-
-    points.forEach((point, index) => {
-
-        const marker = L.marker(point.coords)
-            .addTo(map)
-            .bindPopup(point.name);
-
-        markers.push(marker);
-
-        if (index !== 0) setLocked(marker);
-
-        marker.on('click', function () {
-
-            if (index !== currentStep) {
-                alert("🔒 Ce point est verrouillé !");
-                return;
-            }
-
-            const userAnswer = prompt(point.question);
-
-            if (!userAnswer) return;
-
-            if (normalize(userAnswer) === normalize(point.answer)) {
-
-                alert("✅ Bonne réponse !");
-
-                setLocked(marker);
-
-                currentStep++;
-
-                if (markers[currentStep]) {
-                    setActive(markers[currentStep]);
-                }
-
-                if (currentStep === points.length) {
-                    revealSecret();
-                }
-
-            } else {
-                alert("❌ Mauvaise réponse !");
-            }
+function startConfetti(){
+    for(let i=0;i<100;i++){
+        confetti.push({
+            x:Math.random()*canvas.width,
+            y:Math.random()*canvas.height,
+            r:Math.random()*6,
+            d:Math.random()*5
         });
-    });
+    }
+    draw();
 }
 
-createMarkers();
+function draw(){
+    ctx.clearRect(0,0,canvas.width,canvas.height);
+
+    confetti.forEach(c=>{
+        ctx.fillRect(c.x,c.y,c.r,c.r);
+        c.y+=c.d;
+        if(c.y>canvas.height) c.y=0;
+    });
+
+    requestAnimationFrame(draw);
+}
