@@ -55,17 +55,15 @@ points.forEach((p, i) => {
     // IMPORTANT : aucune ouverture automatique
     marker.closePopup();
 
-    marker.on("click", () => {
+marker.on("click", function () {
 
-        // bloque si pas le bon ordre
-        if (i !== currentStep) {
-            alert("🔒 Ce point est verrouillé");
-            return;
-        }
+    if (i !== currentStep) {
+        alert("🔒 verrouillé");
+        return;
+    }
 
-        // ouvre la question UNIQUEMENT ici
-        openQuestion(i);
-    });
+    openQuestion(i); // SEUL endroit où ça s’ouvre
+});
 });
 
 function openQuestion(index) {
