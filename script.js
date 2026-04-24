@@ -34,35 +34,62 @@ const quizBtn = document.getElementById("quizBtn");
 function normalize(s){return s.toLowerCase().trim();}
 
 // === MARKERS ===
-points.forEach((p,i)=>{
-    let m = L.marker(p.coords).addTo(map).bindPopup(p.name);
-    markers.push(m);
+points.forEach((p, i) => {
 
-    if(i!==0) m.setOpacity(0.3);
+    let marker = L.marker(p.coords)
+        .addTo(map)
+        .bindPopup(p.name);
 
-    m.on("click", ()=>{
-        if(i!==currentStep){
-            alert("🔒 verrouillé");
+    markers.push(marker);
+
+    // état visuel
+    if (i !== 0) {
+        marker.setOpacity(0.3);
+    }
+
+    // IMPORTANT : aucune ouverture automatique
+    marker.closePopup();
+
+    marker.on("click", () => {
+
+        // bloque si pas le bon ordre
+        if (i !== currentStep) {
+            alert("🔒 Ce point est verrouillé");
             return;
         }
 
-        quizBox.classList.remove("hidden");
-        quizQuestion.innerText = p.question;
-        quizInput.value = "";
-
-        quizBtn.onclick = ()=>{
-            answers[i] = quizInput.value;
-            quizBox.classList.add("hidden");
-
-            currentStep++;
-            if(markers[currentStep]) markers[currentStep].setOpacity(1);
-
-            if(currentStep === points.length){
-                checkFinal();
-            }
-        };
+        // ouvre la question UNIQUEMENT ici
+        openQuestion(i);
     });
 });
+
+function openQuestion(index) {
+
+    const p = points[index];
+
+    quizBox.classList.remove("hidden");
+    quizQuestion.innerText = p.question;
+    quizInput.value = "";
+
+    quizBtn.onclick = () => {
+
+        answers[index] = quizInput.value;
+
+        quizBox.classList.add("hidden");
+
+        currentStep++;
+
+        // active le suivant
+        if (markers[currentStep]) {
+            markers[currentStep].setOpacity(1);
+        }
+
+        // fin du jeu
+        if (currentStep === points.length) {
+            checkFinal();
+        }
+    };
+}
 
 // === VALIDATION FINALE ===
 function checkFinal(){
