@@ -93,9 +93,16 @@ function setActive(marker) {
 }
 
 function showWinScreen() {
-    setTimeout(() => {
-        winScreen.classList.add("show");
-    }, 800);
+    winScreen.classList.add("show");
+
+    // 🎊 confettis
+    createConfetti();
+    drawConfetti();
+
+    // 🔊 son
+    winSound.play().catch(() => {
+        console.log("Autoplay bloqué (normal sur mobile)");
+    });
 }
 
 function revealSecret() {
