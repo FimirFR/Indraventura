@@ -9,7 +9,15 @@
     <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 </head>
+<div id="quizBox" class="hidden">
+  <div id="quizQuestion"></div>
 
+  <input type="text" id="quizInput" placeholder="Ta réponse..." />
+
+  <button id="quizBtn">Valider</button>
+
+  <div id="quizFeedback"></div>
+</div>
 <body>
 
 <div id="map"></div>
