@@ -1,5 +1,8 @@
 const map = L.map('map').setView([46.597509, 1.599967], 18);
 
+// AJOUT ICI
+map.closePopup();
+
 // fond OSM
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png')
 .addTo(map);
