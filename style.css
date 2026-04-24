@@ -54,3 +54,29 @@ body {
 
     z-index: 99999;
 }
+
+.winContent {
+    text-align: center;
+    animation: pop 0.6s ease;
+}
+
+.winContent h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.winContent button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes pop {
+    from { transform: scale(0.5); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
