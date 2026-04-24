@@ -107,10 +107,15 @@ function revealSecret() {
 
     L.marker(secretCoords)
         .addTo(map)
-        .bindPopup("🎉 Point final débloqué !")
+        .bindPopup("🔒 Point secret débloqué !")
         .openPopup();
 
     map.setView(secretCoords, 19);
+
+    // 🎉 écran de victoire
+    setTimeout(() => {
+        winScreen.classList.remove("hidden");
+    }, 800);
 }
 
 showPoint(0);
