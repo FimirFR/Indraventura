@@ -1,3 +1,5 @@
+const winSound = document.getElementById("winSound");
+
 const canvas = document.getElementById("confetti");
 const ctx = canvas.getContext("2d");
 
