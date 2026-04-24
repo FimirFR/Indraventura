@@ -1,3 +1,5 @@
+document.getElementById("quizBox").classList.add("hidden");
+
 const map = L.map('map').setView([46.597509, 1.599967], 18);
 
 // AJOUT ICI
