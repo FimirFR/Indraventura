@@ -20,10 +20,48 @@ fetch('data.geojson')
 
 // === QUESTIONS ===
 const points = [
-    {name:"Entrée", coords:[46.597509,1.599967], question:"Quel mot clé permet de commencer ?", answer:"depart"},
-    {name:"Pause", coords:[46.597662,1.599838], question:"Que fait-on ?", answer:"pause"},
-    {name:"Robot", coords:[46.597828,1.599154], question:"Que fait-il ?", answer:"souder"},
-    {name:"Chaîne", coords:[46.598230,1.599380], question:"Elle sert à quoi ?", answer:"produire"}
+    {
+        name: "Le parking des Anges",
+        coords: [46.597291, 1.600230],
+        text: "Bienvenue sur le parking. C’est ici que tout commence. Observe ton environnement et prépare-toi à entrer dans le parcours.",
+        question: "Quel est ce lieu ?",
+        answer: "parking"
+    },    
+    {
+        name: "Entrée",
+        coords: [46.597509, 1.599967],
+        text: "Bienvenue dans le bâtiment. C’est ici que tout commence. Observe ton environnement et prépare-toi à entrer dans le parcours.",
+        question: "Quel mot clé permet de commencer ?",
+        answer: "depart"
+    },
+    {
+        name: "Salle de pause",
+        coords: [46.597662, 1.599838],
+        text: "Cette salle est utilisée quotidiennement par les employés. C’est un lieu de repos et de détente.",
+        question: "Que fait-on dans une salle de pause ?",
+        answer: "pause"
+    },
+    {
+        name: "Robot de soudure",
+        coords: [46.597828, 1.599154],
+        text: "Ce robot est essentiel dans la chaîne industrielle. Il effectue des tâches précises avec rapidité.",
+        question: "Que fait un robot de soudure ?",
+        answer: "souder"
+    },
+    {
+        name: "Chaîne TS",
+        coords: [46.598230, 1.599380],
+        text: "Ici, les produits prennent forme. Chaque étape est cruciale pour le résultat final.",
+        question: "Une chaîne de production sert à quoi ?",
+        answer: "produire"
+    },
+    {
+        name: "La verole Thales",
+        coords: [46.598581, 1.600096],
+        text: "c'est assemblé ici, et une jolie vitrine du savoir non faire.",
+        question: "Une chaîne de production sert à quoi ?",
+        answer: "produire"
+    }
 ];
 
 let answers = [];
