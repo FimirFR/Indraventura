@@ -28,11 +28,11 @@ const points = [
         answer: "0"
     },    
     {
-        name: "Entrée",
+        name: "Les portes du pénitentier",
         coords: [46.597509, 1.599967],
-        text: "Bienvenue dans le bâtiment. C’est ici que tout commence. Observe ton environnement et prépare-toi à entrer dans le parcours.",
-        question: "Quel mot clé permet de commencer ?",
-        answer: "depart"
+        text: "Voila le portail d'entrée. Flute tu as oublié ton badge. <p>Heuresement, tu tu peux appeler quelqu'un...non c'est illisible.</p><p>Mais tu connais le code n'est ce pas ?</p>",
+        question: "Quel est le code ?",
+        answer: "0"
     },
     {
         name: "Salle de pause",
