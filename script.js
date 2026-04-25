@@ -104,14 +104,20 @@ marker.on("click", function () {
 });
 });
 
+const quizText = document.getElementById("quizText");
+
 function openQuestion(index) {
 
     const p = points[index];
 
-    // on affiche UNIQUEMENT ici
     quizBox.classList.remove("hidden");
 
+    // 📝 TEXTE PERSONNALISÉ
+    quizText.innerText = p.text;
+
+    // ❓ QUESTION
     quizQuestion.innerText = p.question;
+
     quizInput.value = "";
 
     quizBtn.onclick = function () {
