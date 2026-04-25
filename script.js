@@ -23,7 +23,7 @@ const points = [
     {
         name: "Le parking des Anges",
         coords: [46.597291, 1.600230],
-        text: "Bienvenue sur le <b>parking des anges</b><br/>. <p>Lhistoir : c'est sur ce magnifique parking goudronné et superbement entretenu que commence note aventure</p><p>Lobs : mais....il n'est pas goudronné, ni entretenu. Tu es sur qu'on est au bon endroit</p><p>Lereveur : Si regarde, il y a des anges posés, ils ont tous déployés leurs ailes pourdorer au soleil</p>",
+        text: "Bienvenue sur le <b>parking des anges</b><br/>. <p>Lhistoir : c'est sur ce magnifique parking goudronné et superbement entretenu que commence notre aventure</p><p>Lobs : mais.... il n'est pas goudronné, ni entretenu. Tu es sur qu'on est au bon endroit ?</p><p>Lereveur : Si regarde, il y a des anges posés, ils ont tous déployés leurs ailes pour dorer au soleil</p>",
         question: "d'ailleurs, combien y'a-t-il d'anges aux ailes déployées sur le parking ? (réponse en chiffre)",
         answer: "0"
     },    
@@ -70,6 +70,7 @@ let currentStep = 0;
 
 // UI
 const quizBox = document.getElementById("quizBox");
+const quizText = document.getElementById("quizText");
 const quizQuestion = document.getElementById("quizQuestion");
 const quizInput = document.getElementById("quizInput");
 const quizBtn = document.getElementById("quizBtn");
@@ -110,7 +111,7 @@ function openQuestion(index) {
 
     // on affiche UNIQUEMENT ici
     quizBox.classList.remove("hidden");
-
+    quizText.innerHTML = p.text;
     quizQuestion.innerText = p.question;
     quizInput.value = "";
 
