@@ -23,9 +23,9 @@ const points = [
     {
         name: "Le parking des Anges",
         coords: [46.597291, 1.600230],
-        text: "Bienvenue sur le parking. C’est ici que tout commence. Observe ton environnement et prépare-toi à entrer dans le parcours.",
-        question: "Quel est ce lieu ?",
-        answer: "parking"
+        text: "Bienvenue sur le <b>parking des anges</b><br/>. <p>Lhistoir : c'est sur ce magnifique parking goudronné et superbement entretenu que commence note aventure</p><p>Lobs : mais....il n'est pas goudronné, ni entretenu. Tu es sur qu'on est au bon endroit</p><p>Lereveur : Si regarde, il y a des anges posés, ils ont tous déployés leurs ailes pourdorer au soleil</p>",
+        question: "d'ailleurs, combien y'a-t-il d'anges aux ailes déployées sur le parking ? (réponse en chiffre)",
+        answer: "0"
     },    
     {
         name: "Entrée",
