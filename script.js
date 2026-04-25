@@ -113,7 +113,7 @@ function openQuestion(index) {
     quizBox.classList.remove("hidden");
 
     // 📝 TEXTE PERSONNALISÉ
-    quizText.innerText = p.text;
+    quizText.innerHTML = p.text;
 
     // ❓ QUESTION
     quizQuestion.innerText = p.question;
