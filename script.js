@@ -38,28 +38,28 @@ const points = [
         name: "Le repos du guérrier",
         coords: [46.597662, 1.599838],
         text: "Cette salle est utilisée quotidiennement par les employés. C’est un lieu de repos et de détente.",
-        question: "Que fait-on dans une salle de <b>pause</b> ?",
+        question: "Que fait-on dans une salle de -pause- ?",
         answer: "pause"
     },
     {
         name: "Nous sommes le Robot",
         coords: [46.597828, 1.599154],
         text: "<p>Doc : Et voici… le Robot. Une relique de puissance brute et d’ingénierie oubliée. Tellement ancien que même ses créateurs ont probablement oublié où est le bouton “ON”. Il peut amalgamer n’importe quelle matière.</p><p>Lobs : Impressionnant. Donc en résumé, il fusionne tout… sauf les preuves qu’il a déjà servi. Parce que là, à part la poussière, il a l’air sorti d’un magasin… jamais ouvert.</p><p>Rêveur : Oh… imaginez… des métaux en fusion, des étincelles, une symphonie industrielle… ça devait être magnifique…</p><p>Lobs : Ouais, surtout le jour imaginaire où quelqu’un a réussi à le brancher.</p><p>Doc : Vous manquez de vision. Ce robot est une légende vivante !</p><p>Lobs : Vivante ? Il bouge moins qu’un meuble IKEA monté de travers.</p><p>Rêveur : Peut-être qu’il attend… le bon moment… ou la bonne âme…</p><p>Lobs : Ou une prise électrique, pour commencer.</p><p>Doc : Je vous assure qu’il fonctionne parfaitement !</p><p>Lobs : Ah oui ? Et il amalgame quoi, là, tout de suite ?</p><p>Doc : …Du potentiel.</p><p>Lobs : Ah. Donc il transforme du vide en promesses. C’est pas un robot, c’est un politicien.</p>",
-        question: "Que fait un robot de <b>soudure</b> ?",
+        question: "Que fait un robot de -soudure- ?",
         answer: "souder"
     },
     {
         name: "Chaîne TS",
         coords: [46.598230, 1.599380],
         text: "Ici, les produits prennent forme. Chaque étape est cruciale pour le résultat final.",
-        question: "Une chaîne de <b>production</b> sert à quoi ?",
+        question: "Une chaîne de -production- sert à quoi ?",
         answer: "produire"
     },
     {
         name: "La verole",
         coords: [46.598581, 1.600096],
         text: "c'est assemblé ici, et une jolie vitrine du savoir non faire.",
-        question: "Une chaîne de <b>production</b> sert à quoi ?",
+        question: "Une chaîne de -production- sert à quoi ?",
         answer: "produire"
     }
 ];
