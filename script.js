@@ -74,6 +74,12 @@ const quizText = document.getElementById("quizText");
 const quizQuestion = document.getElementById("quizQuestion");
 const quizInput = document.getElementById("quizInput");
 const quizBtn = document.getElementById("quizBtn");
+const quizTitle = document.getElementById("quizTitle");
+const closeQuiz = document.getElementById("closeQuiz");
+
+closeQuiz.onclick = () => {
+    quizBox.classList.add("hidden");
+};
 
 function normalize(s){return s.toLowerCase().trim();}
 
@@ -109,8 +115,9 @@ function openQuestion(index) {
 
     const p = points[index];
 
-    // on affiche UNIQUEMENT ici
     quizBox.classList.remove("hidden");
+
+    quizTitle.innerText = p.name; // 👈 titre ajouté
     quizText.innerHTML = p.text;
     quizQuestion.innerText = p.question;
     quizInput.value = "";
@@ -132,7 +139,6 @@ function openQuestion(index) {
         }
     };
 }
-
 
 // === VALIDATION FINALE ===
 function checkFinal(){
