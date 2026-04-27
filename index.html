@@ -14,15 +14,24 @@
 
 <!-- OVERLAY QUESTION -->
 <div id="quizBox" class="hidden">
-  <div class="quizContent">
+<div class="quizContent">
 
-    <div id="quizText"></div>
-    <div id="quizQuestion"></div>
+  <div class="quizHeader">
+    <span id="quizTitle">Point</span>
+    <button id="closeQuiz">✕</button>
+  </div>
 
+  <div class="quizBody">
+    <div id="quizText" class="quizText"></div>
+    <div id="quizQuestion" class="quizQuestion"></div>
+  </div>
+
+  <div class="quizFooter">
     <input type="text" id="quizInput" placeholder="Ta réponse...">
     <button id="quizBtn">Valider</button>
-
   </div>
+
+</div>
 </div>
 
 <!-- WIN SCREEN -->
