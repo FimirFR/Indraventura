@@ -23,14 +23,14 @@ const points = [
     {
         name: "Le parking des Anges",
         coords: [46.597291, 1.600230],
-        text: "Bienvenue sur le <b>parking des anges</b><br/>. <p>Lhistoir : c'est sur ce magnifique parking goudronné et superbement entretenu que commence notre aventure</p><p>Lobs : mais.... il n'est pas goudronné, ni entretenu. Tu es sur qu'on est au bon endroit ?</p><p>Lereveur : Si regarde, il y a des anges posés, ils ont tous déployés leurs ailes pour dorer au soleil</p>",
+        text: "Bienvenue sur le <b>parking des anges</b><br/>. <p>Lhistoire : c'est sur ce magnifique parking goudronné et superbement entretenu que commence notre aventure</p><p>Lobs : mais.... il n'est pas goudronné, ni entretenu. Tu es sur qu'on est au bon endroit ?</p><p>Lereveur : Si regarde, il y a des anges posés, ils ont tous déployés leurs ailes pour dorer au soleil</p>",
         question: "D'ailleurs, combien y'a-t-il d'anges aux ailes déployées sur le parking ? (réponse en chiffre)",
         answer: "0"
     },    
     {
         name: "Les portes du pénitentier",
         coords: [46.597509, 1.599967],
-        text: "Voila le portail d'entrée. Flute tu as oublié ton badge. <p>Heureusement, tu tu peux appeler quelqu'un...non c'est illisible.</p><p>Mais tu connais le code n'est ce pas ?</p>",
+        text: "Voila le <b>portail d'entrée</b>. Flute tu as oublié ton badge. <p>Heureusement, tu tu peux appeler quelqu'un...non c'est illisible.</p><p>Mais tu connais le code n'est ce pas ?</p>",
         question: "Quel est le code ?",
         answer: "0"
     },
@@ -38,28 +38,28 @@ const points = [
         name: "Le repos du guérrier",
         coords: [46.597662, 1.599838],
         text: "Cette salle est utilisée quotidiennement par les employés. C’est un lieu de repos et de détente.",
-        question: "Que fait-on dans une salle de pause ?",
+        question: "Que fait-on dans une salle de <b>pause</b> ?",
         answer: "pause"
     },
     {
         name: "Nous sommes le Robot",
         coords: [46.597828, 1.599154],
         text: "Ce robot est essentiel dans la chaîne industrielle. Il effectue des tâches précises avec rapidité.",
-        question: "Que fait un robot de soudure ?",
+        question: "Que fait un robot de <b>soudure</b> ?",
         answer: "souder"
     },
     {
         name: "Chaîne TS",
         coords: [46.598230, 1.599380],
         text: "Ici, les produits prennent forme. Chaque étape est cruciale pour le résultat final.",
-        question: "Une chaîne de production sert à quoi ?",
+        question: "Une chaîne de <b>production</b> sert à quoi ?",
         answer: "produire"
     },
     {
         name: "La verole",
         coords: [46.598581, 1.600096],
         text: "c'est assemblé ici, et une jolie vitrine du savoir non faire.",
-        question: "Une chaîne de production sert à quoi ?",
+        question: "Une chaîne de <b>production</b> sert à quoi ?",
         answer: "produire"
     }
 ];
