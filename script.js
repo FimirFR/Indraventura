@@ -37,7 +37,7 @@ const points = [
     {
         name: "Le repos du guérrier",
         coords: [46.597662, 1.599838],
-        text: "Cette salle est utilisée quotidiennement par les employés. C’est un lieu de repos et de détente.",
+        text: "<p>Doc : Ici, mes chers collègues, la salle de détente. Un havre de paix où chacun vient relâcher la pression et retrouver son humanité.</p><p>Lobs : Ah oui, avec quatre sièges et demi pour trois cents personnes. C’est pas une salle de détente, c’est une épreuve de Koh-Lanta version bureau.</p><p>Rêveur : Regardez… ces espaces… ces volumes… c’est un lieu d’échange, de partage, presque sacré…</p><p>Lobs : Sacré, oui. Faut être béni pour trouver une place assise.</p><p>Doc : Et vous noterez ces distributeurs, parfaitement intégrés, offrant boissons et douceurs à toute heure.</p><p>Lobs : Intégrés, oui… surtout dans le décor. Vu la couche de poussière, même les snacks ont posé leur démission.</p><p>Rêveur : Peut-être que les gens viennent ici pour autre chose… discuter, se rencontrer…</p><p>Lobs : Ou juste vérifier si quelqu’un a enfin réussi à faire marcher la machine à café.</p><p>Doc : Vous êtes d’un cynisme… cet endroit respire la convivialité !</p><p>Lobs : Il respire surtout le vide. On dirait une salle d’attente… sans personne qui attend.</p><p>Rêveur : Moi je vois… des âmes qui se croisent, des regards qui se cherchent…</p><p>Lobs : Moi je vois surtout des gens qui repartent parce qu’il n’y a ni place, ni café, ni raison de rester.</p>",
         question: "Que fait-on dans une salle de -pause- ?",
         answer: "pause"
     },
