@@ -30,7 +30,7 @@ const points = [
     {
         name: "Les portes du pénitentier",
         coords: [46.597509, 1.599967],
-        text: "Voila le portail d'entrée. Flute tu as oublié ton badge. <p>Heuresement, tu tu peux appeler quelqu'un...non c'est illisible.</p><p>Mais tu connais le code n'est ce pas ?</p>",
+        text: "Voila le portail d'entrée. Flute tu as oublié ton badge. <p>Heureusement, tu tu peux appeler quelqu'un...non c'est illisible.</p><p>Mais tu connais le code n'est ce pas ?</p>",
         question: "Quel est le code ?",
         answer: "0"
     },
