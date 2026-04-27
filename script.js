@@ -24,7 +24,7 @@ const points = [
         name: "Le parking des Anges",
         coords: [46.597291, 1.600230],
         text: "Bienvenue sur le <b>parking des anges</b><br/>. <p>Lhistoir : c'est sur ce magnifique parking goudronné et superbement entretenu que commence notre aventure</p><p>Lobs : mais.... il n'est pas goudronné, ni entretenu. Tu es sur qu'on est au bon endroit ?</p><p>Lereveur : Si regarde, il y a des anges posés, ils ont tous déployés leurs ailes pour dorer au soleil</p>",
-        question: "d'ailleurs, combien y'a-t-il d'anges aux ailes déployées sur le parking ? (réponse en chiffre)",
+        question: "D'ailleurs, combien y'a-t-il d'anges aux ailes déployées sur le parking ? (réponse en chiffre)",
         answer: "0"
     },    
     {
@@ -35,14 +35,14 @@ const points = [
         answer: "0"
     },
     {
-        name: "Salle de pause",
+        name: "Le repos du guérrier",
         coords: [46.597662, 1.599838],
         text: "Cette salle est utilisée quotidiennement par les employés. C’est un lieu de repos et de détente.",
         question: "Que fait-on dans une salle de pause ?",
         answer: "pause"
     },
     {
-        name: "Robot de soudure",
+        name: "Nous sommes le Robot",
         coords: [46.597828, 1.599154],
         text: "Ce robot est essentiel dans la chaîne industrielle. Il effectue des tâches précises avec rapidité.",
         question: "Que fait un robot de soudure ?",
@@ -56,7 +56,7 @@ const points = [
         answer: "produire"
     },
     {
-        name: "La verole Thales",
+        name: "La verole",
         coords: [46.598581, 1.600096],
         text: "c'est assemblé ici, et une jolie vitrine du savoir non faire.",
         question: "Une chaîne de production sert à quoi ?",
