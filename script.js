@@ -23,7 +23,7 @@ const points = [
     {
         name: "Le parking des Anges",
         coords: [46.597291, 1.600230],
-        text: "Bienvenue sur le <b>parking des anges</b><br/>. <p>Lhistoire : c'est sur ce magnifique parking goudronné et superbement entretenu que commence notre aventure</p><p>Lobs : mais.... il n'est pas goudronné, ni entretenu. Tu es sur qu'on est au bon endroit ?</p><p>Lereveur : Si regarde, il y a des anges posés, ils ont tous déployés leurs ailes pour dorer au soleil</p>",
+        text: "Bienvenue sur le <b>parking des anges</b><br/>. <p>Doc : Mesdames et messieurs, bienvenue sur ce somptueux parking goudronné, fleuron de l’urbanisme moderne, où débute notre incroyable aventure.</p><p>Lobs : …Tu te moques de moi ? Y a plus de trous que de sol, on dirait un champ de mines abandonné. Et le goudron, il est en option ?</p><p>Rêveur : Mais non, regarde mieux… ces formes allongées au sol… ces silhouettes… ce sont des anges.</p><p>Lobs : Des anges ?!</p><p>Rêveur : Oui… ils ont tous déployé leurs ailes pour… bronzer paisiblement au soleil.</p<<p>Doc : Exactement. Parking premium : nids-de-poule, poussière, et anges en libre-service. On a vraiment choisi un lieu d’exception.</p><p>Lobs : Ou alors… on est juste perdus sur un terrain vague.</p><p>Rêveur : Quelle vision terre-à-terre… moi je dis qu’on est bénis.</p><p>Doc : Bénis, peut-être. Mais pas assurés, ça c’est sûr.</p>",
         question: "D'ailleurs, combien y'a-t-il d'anges aux ailes déployées sur le parking ? (réponse en chiffre)",
         answer: "0"
     },    
