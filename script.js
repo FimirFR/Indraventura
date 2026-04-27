@@ -44,7 +44,7 @@ const points = [
     {
         name: "Nous sommes le Robot",
         coords: [46.597828, 1.599154],
-        text: "Ce robot est essentiel dans la chaîne industrielle. Il effectue des tâches précises avec rapidité.",
+        text: "<p>Doc : Et voici… le Robot. Une relique de puissance brute et d’ingénierie oubliée. Tellement ancien que même ses créateurs ont probablement oublié où est le bouton “ON”. Il peut amalgamer n’importe quelle matière.</p><p>Lobs : Impressionnant. Donc en résumé, il fusionne tout… sauf les preuves qu’il a déjà servi. Parce que là, à part la poussière, il a l’air sorti d’un magasin… jamais ouvert.</p><p>Rêveur : Oh… imaginez… des métaux en fusion, des étincelles, une symphonie industrielle… ça devait être magnifique…</p><p>Lobs : Ouais, surtout le jour imaginaire où quelqu’un a réussi à le brancher.</p><p>Doc : Vous manquez de vision. Ce robot est une légende vivante !</p><p>Lobs : Vivante ? Il bouge moins qu’un meuble IKEA monté de travers.</p><p>Rêveur : Peut-être qu’il attend… le bon moment… ou la bonne âme…</p><p>Lobs : Ou une prise électrique, pour commencer.</p><p>Doc : Je vous assure qu’il fonctionne parfaitement !</p><p>Lobs : Ah oui ? Et il amalgame quoi, là, tout de suite ?</p><p>Doc : …Du potentiel.</p><p>Lobs : Ah. Donc il transforme du vide en promesses. C’est pas un robot, c’est un politicien.</p>",
         question: "Que fait un robot de <b>soudure</b> ?",
         answer: "souder"
     },
