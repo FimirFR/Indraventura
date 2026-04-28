@@ -22,34 +22,61 @@ const points = [
   {
     name: "Le parking des Anges",
     coords: [46.597291, 1.60023],
-    text:
-      "Bienvenue sur le <b>parking des anges</b><br/>. <p>Doc : Mesdames et messieurs, bienvenue sur ce somptueux parking goudronné, fleuron de l’urbanisme moderne, où débute notre incroyable aventure.</p><p>Lobs : …Tu te moques de moi ? Y a plus de trous que de sol, on dirait un champ de mines abandonné. Et le goudron, il est en option ?</p><p>Rêveur : Mais non, regarde mieux… ces formes allongées au sol… ces silhouettes… ce sont des anges.</p><p>Lobs : Des anges ?!</p><p>Rêveur : Oui… ils ont tous déployé leurs ailes pour… bronzer paisiblement au soleil.</p<<p>Doc : Exactement. Parking premium : nids-de-poule, poussière, et anges en libre-service. On a vraiment choisi un lieu d’exception.</p><p>Lobs : Ou alors… on est juste perdus sur un terrain vague.</p><p>Rêveur : Quelle vision terre-à-terre… moi je dis qu’on est bénis.</p><p>Doc : Bénis, peut-être. Mais pas assurés, ça c’est sûr.</p>",
-
     dialogues: [
       {
-        speaker: "Lhistoir",
+        speaker: "Doc",
         avatar: "avatar1.png",
-        text: "C'est sur ce magnifique parking que commence notre aventure."
+        text: "Mesdames et messieurs, bienvenue sur ce somptueux <b>parking des anges</b> goudronné, fleuron de l’urbanisme moderne, où débute notre incroyable aventure."
       },
       {
-        speaker: "Lobs",
+        speaker: "Dex",
         avatar: "avatar2.png",
-        text: "Euh… il n’est pas goudronné du tout 😅"
+        text: "…Tu te moques de moi ? Y a plus de trous que de sol, on dirait un champ de mines abandonné. Et le goudron, il est en option ?"
       },
       {
-        speaker: "Lereveur",
+        speaker: "Dingo",
         avatar: "avatar3.png",
-        text: "Regarde ! Les anges déploient leurs ailes au soleil."
-      }
+        text: "Mais non, regarde mieux… ces formes allongées au sol… ces silhouettes… ce sont des anges."
+      },
+      {
+        speaker: "Dex",
+        avatar: "avatar2.png",
+        text: "Des anges ?"
+      },
+      {
+        speaker: "Dingo",
+        avatar: "avatar3.png",
+        text: "Oui… ils ont tous déployé leurs ailes pour… bronzer paisiblement au soleil."
+      },
+      {
+        speaker: "Doc",
+        avatar: "avatar1.png",
+        text: "Exactement. Parking premium : nids-de-poule, poussière, et anges en libre-service. On a vraiment choisi un lieu d’exception."
+      },	
+      {
+        speaker: "Dex",
+        avatar: "avatar2.png",
+        text: "Ou alors… on est juste perdus sur un terrain vague."
+      },	
+     {
+        speaker: "Dingo",
+        avatar: "avatar3.png",
+        text: "Quelle vision terre-à-terre… moi je dis qu’on est bénis."
+      },
+      {
+        speaker: "Doc",
+        avatar: "avatar1.png",
+        text: "Bénis, peut-être. Mais pas assurés, ça c’est sûr."
+      }	  
     ],
 
     question:
       "D'ailleurs, combien y'a-t-il d'anges aux ailes déployées sur le parking ? (réponse en chiffre)",
     hint: "Si tu compte celui qui passe en plus, tu en as déjà un en trop...",
     success: {
-      img: "image.jpg",
-      text: "Green Attitude",
-      link: "https://example.com"
+      img: "https://indraventura.wordpress.com/wp-content/uploads/2025/07/tesla-1.png?w=300",
+      text: "Succès trouvé : Green Attitude",
+      link: "https://indraventura.wordpress.com/tesla/"
     },
     answer: "0"
   },
