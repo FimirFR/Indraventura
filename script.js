@@ -25,47 +25,47 @@ const points = [
     dialogues: [
       {
         speaker: "Doc",
-        avatar: "avatar1.png",
+        avatar: "doc.png",
         text: "Mesdames et messieurs, bienvenue sur ce somptueux <b>parking des anges</b> goudronné, fleuron de l’urbanisme moderne, où débute notre incroyable aventure."
       },
       {
         speaker: "Dex",
-        avatar: "avatar2.png",
+        avatar: "dex.png",
         text: "…Tu te moques de moi ? Y a plus de trous que de sol, on dirait un champ de mines abandonné. Et le goudron, il est en option ?"
       },
       {
         speaker: "Dingo",
-        avatar: "avatar3.png",
+        avatar: "dingo.png",
         text: "Mais non, regarde mieux… ces formes allongées au sol… ces silhouettes… ce sont des anges."
       },
       {
         speaker: "Dex",
-        avatar: "avatar2.png",
+        avatar: "dex.png",
         text: "Des anges ?"
       },
       {
         speaker: "Dingo",
-        avatar: "avatar3.png",
+        avatar: "dingo.png",
         text: "Oui… ils ont tous déployé leurs ailes pour… bronzer paisiblement au soleil."
       },
       {
         speaker: "Doc",
-        avatar: "avatar1.png",
+        avatar: "doc.png",
         text: "Exactement. Parking premium : nids-de-poule, poussière, et anges en libre-service. On a vraiment choisi un lieu d’exception."
       },	
       {
         speaker: "Dex",
-        avatar: "avatar2.png",
+        avatar: "dex.png",
         text: "Ou alors… on est juste perdus sur un terrain vague."
       },	
      {
         speaker: "Dingo",
-        avatar: "avatar3.png",
+        avatar: "dingo.png",
         text: "Quelle vision terre-à-terre… moi je dis qu’on est bénis."
       },
       {
         speaker: "Doc",
-        avatar: "avatar1.png",
+        avatar: "doc.png",
         text: "Bénis, peut-être. Mais pas assurés, ça c’est sûr."
       }	  
     ],
@@ -83,6 +83,57 @@ const points = [
   {
     name: "Les portes du pénitentier",
     coords: [46.597509, 1.599967],
+	
+   dialogues: [
+      {
+        speaker: "Doc",
+        avatar: "doc.png",
+        text: "Mesdames et messieurs, bienvenue sur ce somptueux <b>parking des anges</b> goudronné, fleuron de l’urbanisme moderne, où débute notre incroyable aventure."
+      },
+      {
+        speaker: "Dex",
+        avatar: "dex.png",
+        text: "…Tu te moques de moi ? Y a plus de trous que de sol, on dirait un champ de mines abandonné. Et le goudron, il est en option ?"
+      },
+      {
+        speaker: "Dingo",
+        avatar: "dingo.png",
+        text: "Mais non, regarde mieux… ces formes allongées au sol… ces silhouettes… ce sont des anges."
+      },
+      {
+        speaker: "Dex",
+        avatar: "dex.png",
+        text: "Des anges ?"
+      },
+      {
+        speaker: "Dingo",
+        avatar: "dingo.png",
+        text: "Oui… ils ont tous déployé leurs ailes pour… bronzer paisiblement au soleil."
+      },
+      {
+        speaker: "Doc",
+        avatar: "doc.png",
+        text: "Exactement. Parking premium : nids-de-poule, poussière, et anges en libre-service. On a vraiment choisi un lieu d’exception."
+      },	
+      {
+        speaker: "Dex",
+        avatar: "dex.png",
+        text: "Ou alors… on est juste perdus sur un terrain vague."
+      },	
+     {
+        speaker: "Dingo",
+        avatar: "dingo.png",
+        text: "Quelle vision terre-à-terre… moi je dis qu’on est bénis."
+      },
+      {
+        speaker: "Doc",
+        avatar: "doc.png",
+        text: "Bénis, peut-être. Mais pas assurés, ça c’est sûr."
+      }	  
+    ],	
+	
+	
+	
     text:
       "<p>Doc : Voici le portail d’entrée. Élégant, sécurisé, impénétrable. Il faut un badge pour y accéder.</p><p>Lobs : Super. On n’en a pas. Mais y a un interphone… donc on peut supplier quelqu’un, c’est ça ?</p><p>Doc : Exactement ! Il suffit de faire défiler pour choisir un interlocuteur.</p><p>Lobs : “Faire défiler”… tu veux dire regarder un écran où les noms passent à la vitesse d’un générique de film… sans pause… et sans bouton “stop” ?</p><p>Doc : C’est une interface… dynamique.</p><p>Lobs : C’est surtout une roulette russe administrative. Allez, on tente le code par défaut, comme tout système oublié.</p><p>Doc : Je vous déconseille fortement—</p><p>Lobs : bip bip bip … Voilà. Si ça s’ouvre, on confirme que la sécurité repose sur l’espoir.</p><p>Rêveur : Écoutez ce silence… ce portail… c’est une frontière… on quitte la liberté extérieure pour entrer dans une autre dimension…</p><p>Lobs : Oui, une dimension où même entrer demande un doctorat en interphone.</p><p>Doc : Vous dramatisez. C’est un simple contrôle d’accès.</p><p>Lobs : Non, c’est une épreuve initiatique. Si t’arrives à rentrer, t’as déjà mérité ton poste.</p><p>Rêveur : Peut-être que le portail nous teste… pour savoir si on est dignes…</p><p>Lobs : Ou alors il bug, comme tout le reste ici.</p>",
     question: "Quel est le code ?",
