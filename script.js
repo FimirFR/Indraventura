@@ -29,7 +29,7 @@ const points = [
       "Bienvenue sur le <b>parking des anges</b><br/>. <p>Doc : Mesdames et messieurs, bienvenue sur ce somptueux parking goudronné, fleuron de l’urbanisme moderne, où débute notre incroyable aventure.</p><p>Lobs : …Tu te moques de moi ? Y a plus de trous que de sol, on dirait un champ de mines abandonné. Et le goudron, il est en option ?</p><p>Rêveur : Mais non, regarde mieux… ces formes allongées au sol… ces silhouettes… ce sont des anges.</p><p>Lobs : Des anges ?!</p><p>Rêveur : Oui… ils ont tous déployé leurs ailes pour… bronzer paisiblement au soleil.</p<<p>Doc : Exactement. Parking premium : nids-de-poule, poussière, et anges en libre-service. On a vraiment choisi un lieu d’exception.</p><p>Lobs : Ou alors… on est juste perdus sur un terrain vague.</p><p>Rêveur : Quelle vision terre-à-terre… moi je dis qu’on est bénis.</p><p>Doc : Bénis, peut-être. Mais pas assurés, ça c’est sûr.</p>",
     question:
       "D'ailleurs, combien y'a-t-il d'anges aux ailes déployées sur le parking ? (réponse en chiffre)",
-    hint: "Si tu compte celui qui passe en plus, tu en as déjà un en trop...",
+    hint: "Si tu comptes celui qui passe en plus, tu en as déjà un en trop...",
     success: {
       img: "https://indraventura.wordpress.com/wp-admin/upload.php?item=154",
       text: "It's Electric",
@@ -43,6 +43,7 @@ const points = [
     text:
       "<p>Doc : Voici le portail d’entrée. Élégant, sécurisé, impénétrable. Il faut un badge pour y accéder.</p><p>Lobs : Super. On n’en a pas. Mais y a un interphone… donc on peut supplier quelqu’un, c’est ça ?</p><p>Doc : Exactement ! Il suffit de faire défiler pour choisir un interlocuteur.</p><p>Lobs : “Faire défiler”… tu veux dire regarder un écran où les noms passent à la vitesse d’un générique de film… sans pause… et sans bouton “stop” ?</p><p>Doc : C’est une interface… dynamique.</p><p>Lobs : C’est surtout une roulette russe administrative. Allez, on tente le code par défaut, comme tout système oublié.</p><p>Doc : Je vous déconseille fortement—</p><p>Lobs : bip bip bip … Voilà. Si ça s’ouvre, on confirme que la sécurité repose sur l’espoir.</p><p>Rêveur : Écoutez ce silence… ce portail… c’est une frontière… on quitte la liberté extérieure pour entrer dans une autre dimension…</p><p>Lobs : Oui, une dimension où même entrer demande un doctorat en interphone.</p><p>Doc : Vous dramatisez. C’est un simple contrôle d’accès.</p><p>Lobs : Non, c’est une épreuve initiatique. Si t’arrives à rentrer, t’as déjà mérité ton poste.</p><p>Rêveur : Peut-être que le portail nous teste… pour savoir si on est dignes…</p><p>Lobs : Ou alors il bug, comme tout le reste ici.</p>",
     question: "Quel est le code ?",
+    hint: "autant que d'ange",
     answer: "0"
   },
   {
