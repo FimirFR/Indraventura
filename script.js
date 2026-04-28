@@ -31,8 +31,8 @@ const points = [
       "D'ailleurs, combien y'a-t-il d'anges aux ailes déployées sur le parking ? (réponse en chiffre)",
     hint: "Si tu compte celui qui passe en plus, tu en as déjà un en trop...",
     success: {
-      img: "image.jpg",
-      text: "Green Attitude",
+      img: "https://indraventura.wordpress.com/wp-admin/upload.php?item=154",
+      text: "It's Electric",
       link: "https://example.com"
     },
     answer: "0"
