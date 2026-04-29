@@ -74,9 +74,9 @@ const points = [
       "D'ailleurs, combien y'a-t-il d'anges aux ailes déployées sur le parking ? (réponse en chiffre)",
     hint: "Si tu compte celui qui passe en plus, tu en as déjà un en trop...",
     success: {
-      img: "https://indraventura.wordpress.com/wp-content/uploads/2025/07/tesla-1.png?w=300",
-      text: "Succès trouvé : Green Attitude",
-      link: "https://indraventura.wordpress.com/tesla/"
+      img: "https://indraventura.wordpress.com/wp-admin/upload.php?item=1287",
+      text: "Succès trouvé : Le parking des anges",
+      link: "https://indraventura.wordpress.com/parking/"
     },
     answer: "0"
   },
@@ -155,34 +155,333 @@ const points = [
         avatar: "dex.png",
         text: "Ou alors il bug, comme tout le reste ici."
       }
-    ],	
+    ],		
     question: "Quel est le code ?",
+    success: {
+      img: "https://indraventura.wordpress.com/wp-admin/upload.php?item=1447",
+      text: "Succès trouvé : Nabilla",
+      link: "https://indraventura.wordpress.com/nabilla1/"
+    },	
     hint: "autant que d'ange",	
     answer: "0"
   },
   {
     name: "Le repos du guerrier",
     coords: [46.597662, 1.599838],
-    text:
-      "<p>Doc : Ici, mes chers collègues, la salle de détente. Un havre de paix où chacun vient relâcher la pression et retrouver son humanité.</p><p>Lobs : Ah oui, avec quatre sièges et demi pour trois cents personnes. C’est pas une salle de détente, c’est une épreuve de Koh-Lanta version bureau.</p><p>Rêveur : Regardez… ces espaces… ces volumes… c’est un lieu d’échange, de partage, presque sacré…</p><p>Lobs : Sacré, oui. Faut être béni pour trouver une place assise.</p><p>Doc : Et vous noterez ces distributeurs, parfaitement intégrés, offrant boissons et douceurs à toute heure.</p><p>Lobs : Intégrés, oui… surtout dans le décor. Vu la couche de poussière, même les snacks ont posé leur démission.</p><p>Rêveur : Peut-être que les gens viennent ici pour autre chose… discuter, se rencontrer…</p><p>Lobs : Ou juste vérifier si quelqu’un a enfin réussi à faire marcher la machine à café.</p><p>Doc : Vous êtes d’un cynisme… cet endroit respire la convivialité !</p><p>Lobs : Il respire surtout le vide. On dirait une salle d’attente… sans personne qui attend.</p><p>Rêveur : Moi je vois… des âmes qui se croisent, des regards qui se cherchent…</p><p>Lobs : Moi je vois surtout des gens qui repartent parce qu’il n’y a ni place, ni café, ni raison de rester.</p>",
-    question: "Que fait-on dans une salle de -pause- ?",
-    answer: "pause"
+	
+   dialogues: [
+      {
+        speaker: "Doc",
+        avatar: "doc.png",
+        text: "Ici, mes chers collègues, la salle de détente. Un havre de paix où chacun vient relâcher la pression et retrouver son humanité."
+      },
+      {
+        speaker: "Dex",
+        avatar: "dex.png",
+        text: "Ah oui, avec quatre sièges et demi pour huit cents personnes. C’est pas une salle de détente, c’est une épreuve de Koh-Lanta version bureau."
+      },
+      {
+        speaker: "Dingo",
+        avatar: "dingo.png",
+        text: "Regardez… ces espaces… ces volumes… c’est un lieu d’échange, de partage, presque sacré…"
+      },	
+      {
+        speaker: "Dex",
+        avatar: "dex.png",
+        text: "Sacré, oui. Faut être béni pour trouver une place assise."
+      },	  
+      {
+        speaker: "Doc",
+        avatar: "doc.png",
+        text: "Et vous noterez ces distributeurs, parfaitement intégrés, offrant boissons et douceurs à toute heure."
+      },
+      {
+        speaker: "Dex",
+        avatar: "dex.png",
+        text: "Intégrés, oui… surtout dans le décor. Vu la couche de poussière, même les snacks ont posé leur démission."
+      },		  
+      {
+        speaker: "Dingo",
+        avatar: "dingo.png",
+        text: "Peut-être que les gens viennent ici pour autre chose… discuter, se rencontrer…"
+      },	  
+      {
+        speaker: "Dex",
+        avatar: "dex.png",
+        text: "Ou juste vérifier si quelqu’un a enfin réussi à faire marcher la machine à café."
+      },
+      {
+        speaker: "Doc",
+        avatar: "doc.png",
+        text: "Vous êtes d’un cynisme… cet endroit respire la convivialité !"
+      },
+      {
+        speaker: "Dex",
+        avatar: "dex.png",
+        text: "Il respire surtout le vide. On dirait une salle d’attente… sans personne qui attend."
+      },	  
+      {
+        speaker: "Dingo",
+        avatar: "dingo.png",
+        text: " Moi je vois… des âmes qui se croisent, des regards qui se cherchent…"
+      },
+      {
+        speaker: "Dex",
+        avatar: "dex.png",
+        text: "Moi je vois surtout des gens qui repartent parce qu’il n’y a ni place, ni café, ni raison de rester."
+      }
+    ],
+    question: "Combien y a-ti de gobelet(s) vide à dispostion ?",
+    success: {
+      img: "https://indraventura.wordpress.com/wp-admin/upload.php?item=204",
+      text: "Succès trouvé : Le compas dans l'oeil",
+      link: "https://indraventura.wordpress.com/compas/"
+    },	
+    answer: "0"
   },
+  
+  {
+    name: "La Machine de Mesure",
+    coords: [46.597769, 1.599482],
+	dialogues: [
+      {
+        speaker: "Dingo",
+        avatar: "dingo.png",
+        text: "Rooohhhhhh… quelle magnifique machine… on dirait un autel sacré dédié à la précision…"
+      },
+      {
+        speaker: "Dex",
+        avatar: "dex.png",
+        text: "De quoi ? Le cube avec un cylindre dessus ? On dirait un micro-ondes qui a raté sa vocation."
+      },	  
+      {
+        speaker: "Doc",
+        avatar: "doc.png",
+        text: "Un peu de respect. C’est une Machine de Mesure Tridimensionnelle"
+      },
+      {
+        speaker: "Dex",
+        avatar: "dex.png",
+        text: "Traduction : ça mesure des trucs en 3D. Waouh, révolution. Et ça sert à faire quoi, concrètement ?"
+      },
+     {
+        speaker: "Doc",
+        avatar: "doc.png",
+        text: "À mesurer les longueurs, largeurs, hauteurs, ainsi que les angles droits des pièces."
+      },		
+      {
+        speaker: "Dingo",
+        avatar: "dingo.png",
+        text: "C’est… prodigieux… la géométrie incarnée…"
+      },
+      {
+        speaker: "Dex",
+        avatar: "dex.png",
+        text: "Donc en gros, si t’as un cube parfait, elle est heureuse. Si t’as autre chose… elle fait une dépression ?"
+      },
+     {
+        speaker: "Doc",
+        avatar: "doc.png",
+        text: "Disons que pour des formes plus complexes, il faut des modules complémentaires."
+      },
+      {
+        speaker: "Dex",
+        avatar: "dex.png",
+        text: "Ah. Donc pour mesurer autre chose que des Lego, faut passer à la caisse."
+      },
+     {
+        speaker: "Doc",
+        avatar: "doc.png",
+        text: "Ce sont des équipements de précision, forcément—"
+      },
+      {
+        speaker: "Dex",
+        avatar: "dex.png",
+        text: "Forcément hors de prix, oui. Donc de base, elle fait le strict minimum, et pour le reste… DLC ?"
+      },
+      {
+        speaker: "Dingo",
+        avatar: "dingo.png",
+        text: "Peut-être qu’elle évolue… comme une entité… qu’on nourrit de modules…"
+      },	  
+      {
+        speaker: "Dex",
+        avatar: "dex.png",
+        text: "Super, une machine à abonnement. Bientôt elle va demander une mise à jour pour mesurer un rond."
+      },	  
+     {
+        speaker: "Doc",
+        avatar: "doc.png",
+        text: "Vous simplifiez beaucoup trop…"
+      },	  
+     {
+        speaker: "Dex",
+        avatar: "dex.png",
+        text: "Non, je résume : sans options, elle mesure des cubes. Avec options, elle mesure ton budget."
+      }
+    ],		
+    question: "Si on retire 90 à l'angle qu'elle peut mesurer, quel chiffre obitent-on ?",
+    success: {
+      img: "https://indraventura.wordpress.com/wp-admin/upload.php?item=172",
+      text: "Succès trouvé : MMT",
+      link: "https://indraventura.wordpress.com/mmt2/"
+    },	
+    answer: "0"
+  },  
+  
   {
     name: "Nous sommes le Robot",
     coords: [46.597828, 1.599154],
-    text:
-      "<p>Doc : Et voici… le Robot. Une relique de puissance brute et d’ingénierie oubliée. Tellement ancien que même ses créateurs ont probablement oublié où est le bouton “ON”. Il peut amalgamer n’importe quelle matière.</p><p>Lobs : Impressionnant. Donc en résumé, il fusionne tout… sauf les preuves qu’il a déjà servi. Parce que là, à part la poussière, il a l’air sorti d’un magasin… jamais ouvert.</p><p>Rêveur : Oh… imaginez… des métaux en fusion, des étincelles, une symphonie industrielle… ça devait être magnifique…</p><p>Lobs : Ouais, surtout le jour imaginaire où quelqu’un a réussi à le brancher.</p><p>Doc : Vous manquez de vision. Ce robot est une légende vivante !</p><p>Lobs : Vivante ? Il bouge moins qu’un meuble IKEA monté de travers.</p><p>Rêveur : Peut-être qu’il attend… le bon moment… ou la bonne âme…</p><p>Lobs : Ou une prise électrique, pour commencer.</p><p>Doc : Je vous assure qu’il fonctionne parfaitement !</p><p>Lobs : Ah oui ? Et il amalgame quoi, là, tout de suite ?</p><p>Doc : …Du potentiel.</p><p>Lobs : Ah. Donc il transforme du vide en promesses. C’est pas un robot, c’est un politicien.</p>",
-    question: "Que fait un robot de -soudure- ?",
-    answer: "souder"
+	dialogues: [
+      {
+        speaker: "Doc",
+        avatar: "doc.png",
+        text: "Et voici… le Robot. Une relique de puissance brute et d’ingénierie oubliée. Tellement ancien que même ses créateurs ont probablement oublié où est le bouton “ON”. Il peut amalgamer n’importe quelle matière."
+      },
+      {
+        speaker: "Dex",
+        avatar: "dex.png",
+        text: "Impressionnant. Donc en résumé, il fusionne tout… sauf les preuves qu’il a déjà servi. Parce que là, à part la poussière, il a l’air sorti d’un magasin… jamais ouvert."
+      },
+      {
+        speaker: "Dingo",
+        avatar: "dingo.png",
+        text: "Oh… imaginez… des métaux en fusion, des étincelles, une symphonie industrielle… ça devait être magnifique…"
+      },		
+      {
+        speaker: "Dex",
+        avatar: "dex.png",
+        text: "Ouais, surtout le jour imaginaire où quelqu’un a réussi à le brancher."
+      },	  
+      {
+        speaker: "Doc",
+        avatar: "doc.png",
+        text: "Vous manquez de vision. Ce robot est une légende vivante !"
+      },	  
+      {
+        speaker: "Dex",
+        avatar: "dex.png",
+        text: "Vivante ? Il bouge moins qu’un meuble IKEA monté de travers."
+      },	  
+      {
+        speaker: "Dingo",
+        avatar: "dingo.png",
+        text: "Peut-être qu’il attend… le bon moment… ou la bonne âme…"
+      },		  
+      {
+        speaker: "Dex",
+        avatar: "dex.png",
+        text: "Ou une prise électrique, pour commencer."
+      },
+      {
+        speaker: "Doc",
+        avatar: "doc.png",
+        text: "Je vous assure qu’il fonctionne parfaitement !"
+      },
+      {
+        speaker: "Dex",
+        avatar: "dex.png",
+        text: "Ah oui ? Et il amalgame quoi, là, tout de suite ?"
+      },
+      {
+        speaker: "Doc",
+        avatar: "doc.png",
+        text: " …Du potentiel."
+      },	  
+      {
+        speaker: "Dex",
+        avatar: "dex.png",
+        text: "Ah. Donc il transforme du vide en promesses. C’est pas un robot, c’est un politicien."
+      }
+    ],	
+    question: "Pendant combien de mois consécutif le robot a tourné en continu ?",
+    hint: "Rappelez vous des anges",	
+    answer: "0"
   },
   {
-    name: "Chaîne TS",
+    name: "CEVESO",
     coords: [46.59823, 1.59938],
-    text:
-      "Ici, les produits prennent forme. Chaque étape est cruciale pour le résultat final.",
-    question: "Une chaîne de -production- sert à quoi ?",
-    answer: "produire"
+
+dialogues: [
+      {
+        speaker: "Dingo",
+        avatar: "dingo.png",
+        text: "Il y a une odeur… différente ici… à la fois agréable, déplaisante… et presque… envoûtante…"
+      },	
+      {
+        speaker: "Dex",
+        avatar: "dex.png",
+        text: "Oui, ça s’appelle des produits chimiques. Moins poétique, mais plus réaliste."
+      },
+      {
+        speaker: "Doc",
+        avatar: "doc.png",
+        text: "Exact. C’est ici que sont stockés et utilisés tous les produits dangereux, avec leurs protocoles de sécurité stricts—"
+      },
+      {
+        speaker: "Dex",
+        avatar: "dex.png",
+        text: "“Stricts”… et si ça fuit, si ça explose, ou si quelqu’un oublie un bouchon ?"
+      },
+      {
+        speaker: "Doc",
+        avatar: "doc.png",
+        text: "Il y a des procédures très claires en cas d’incident."
+      },	
+      {
+        speaker: "Dex",
+        avatar: "dex.png",
+        text: "Ah oui ? Genre “courir très vite dans la direction opposée” ?"
+      },
+      {
+        speaker: "Dingo",
+        avatar: "dingo.png",
+        text: "Peut-être que cette odeur… c’est le mélange des expériences passées… des traces invisibles de science…"
+      },	
+      {
+        speaker: "Dex",
+        avatar: "dex.png",
+        text: "Ou des vapeurs toxiques en train de nous grignoter le cerveau, au choix."
+      },
+      {
+        speaker: "Doc",
+        avatar: "doc.png",
+        text: "Vous dramatisez. Tout est parfaitement contrôlé."
+      },
+      {
+        speaker: "Dex",
+        avatar: "dex.png",
+        text: "Bien sûr. Comme l’interphone, le robot et la salle de détente ?"
+      },
+      {
+        speaker: "Dingo",
+        avatar: "dingo.png",
+        text: "Moi je ressens… une alchimie… une transformation…"
+      },	
+      {
+        speaker: "Dex",
+        avatar: "dex.png",
+        text: " Moi je ressens surtout que si je reste trop longtemps, je vais commencer à voir deux robots inutiles."
+      },
+     {
+        speaker: "Doc",
+        avatar: "doc.png",
+        text: "C’est une zone à haut potentiel scientifique."
+      },
+      {
+        speaker: "Dex",
+        avatar: "dex.png",
+        text: "Oui, potentiel d’intoxication compris."
+      }
+    ],	
+
+    success: {
+      img: "https://indraventura.wordpress.com/wp-admin/upload.php?item=205",
+      text: "Succès trouvé : Traitement de surface",
+      link: "https://indraventura.wordpress.com/tts2/"
+    },		  
+    question: "Combien y'a t il de variétés de produits non toxique dans les différentes cuves ? L'eau ne compte pas.",
+    answer: "0"	
   },
   {
     name: "La verole",
