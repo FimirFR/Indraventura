@@ -240,6 +240,94 @@ const points = [
     answer: "0"
   },
   
+  
+   {
+    name: "La salle sécurisée",
+    coords: [46.597754, 1.599916],
+    text: "c'est assemblé ici, et une jolie vitrine du savoir non faire.",
+	
+	
+     dialogues: [
+      {
+        speaker: "Dex",
+        avatar: "dex.png",
+        text: "C’est quoi cette porte fermée ? On dirait un boss final."
+      },	 
+      {
+        speaker: "Doc",
+        avatar: "doc.png",
+        text: "Derrière, se trouve le cœur de l’entreprise. Le centre vital. La salle des serveurs et des baies de brassage."
+      },
+      {
+        speaker: "Dex",
+        avatar: "dex.png",
+        text: "Ah oui… le cerveau numérique… qui sent le barbecue."
+      },
+      {
+        speaker: "Dingo",
+        avatar: "dingo.png",
+        text: " Oui… c’est vrai… une odeur étrange… comme si quelqu’un préparait quelque chose… presque chaleureux…"
+      },	
+      {
+        speaker: "Dex",
+        avatar: "dex.png",
+        text: "Chaleureux ? Ça sent le cramé, surtout. Y a pas un petit incendie en cours, là ?"
+      }, 
+      {
+        speaker: "Doc",
+        avatar: "doc.png",
+        text: "Absolument pas. Ils sont simplement en train de changer les switchs."
+      },
+      {
+        speaker: "Dex",
+        avatar: "dex.png",
+        text: "Donc à chaque fois qu’on change un câble, ça sent la merguez électronique ?"
+      }, 
+      {
+        speaker: "Doc",
+        avatar: "doc.png",
+        text: "Ce sont des opérations techniques délicates."
+      }, 
+      {
+        speaker: "Dex",
+        avatar: "dex.png",
+        text: "Délicates, oui. À deux doigts d’appeler les pompiers, surtout."
+      }, 
+      {
+        speaker: "Dingo",
+        avatar: "dingo.png",
+        text: "Peut-être que la machine… souffre… qu’elle se transforme… qu’elle renait…"
+      },
+      {
+        speaker: "Dex",
+        avatar: "dex.png",
+        text: "Ou peut-être qu’elle fond, tout simplement."
+      }, 
+      {
+        speaker: "Doc",
+        avatar: "doc.png",
+        text: "Tout est sous contrôle."
+      }, 
+      {
+        speaker: "Dex",
+        avatar: "dex.png",
+        text: "C’est rassurant. C’est exactement ce qu’on dit juste avant une panne générale."
+      }
+    ],	
+    question: "Si on fait exception de la porte principale, de combien d'autres issues dipose cette pièce ?",
+    success: {
+      img: "https://indraventura.wordpress.com/wp-content/uploads/2025/07/switch3-1.png",
+      text: "Succès trouvé : Ca sent le brulé non ?",
+      link: "https://indraventura.wordpress.com/switch3/"
+    },	
+    answer: "0"
+  }, 
+  
+  
+  
+  
+  
+  
   {
     name: "La Machine de Mesure",
     coords: [46.597769, 1.599482],
