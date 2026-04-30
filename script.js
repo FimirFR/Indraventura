@@ -74,7 +74,7 @@ const points = [
       "D'ailleurs, combien y'a-t-il d'anges aux ailes déployées sur le parking ? (réponse en chiffre)",
     hint: "Si tu compte celui qui passe en plus, tu en as déjà un en trop...",
     success: {
-      img: "https://indraventura.wordpress.com/wp-admin/upload.php?item=1287",
+      img: "https://indraventura.wordpress.com/wp-content/uploads/2025/09/parking-1.png",
       text: "Succès trouvé : Le parking des anges",
       link: "https://indraventura.wordpress.com/parking/"
     },
@@ -158,7 +158,7 @@ const points = [
     ],		
     question: "Quel est le code ?",
     success: {
-      img: "https://indraventura.wordpress.com/wp-admin/upload.php?item=1447",
+      img: "https://indraventura.wordpress.com/wp-content/uploads/2026/03/nabilla1.png",
       text: "Succès trouvé : Nabilla",
       link: "https://indraventura.wordpress.com/nabilla1/"
     },	
@@ -233,7 +233,7 @@ const points = [
     ],
     question: "Combien y a-ti de gobelet(s) vide à dispostion ?",
     success: {
-      img: "https://indraventura.wordpress.com/wp-admin/upload.php?item=204",
+      img: "https://indraventura.wordpress.com/wp-content/uploads/2025/07/compas-1.png",
       text: "Succès trouvé : Le compas dans l'oeil",
       link: "https://indraventura.wordpress.com/compas/"
     },	
@@ -322,7 +322,7 @@ const points = [
     ],		
     question: "Si on retire 90 à l'angle qu'elle peut mesurer, quel chiffre obitent-on ?",
     success: {
-      img: "https://indraventura.wordpress.com/wp-admin/upload.php?item=172",
+      img: "https://indraventura.wordpress.com/wp-content/uploads/2025/07/mmt2-1.png",
       text: "Succès trouvé : MMT",
       link: "https://indraventura.wordpress.com/mmt2/"
     },	
@@ -476,7 +476,7 @@ dialogues: [
     ],	
 
     success: {
-      img: "https://indraventura.wordpress.com/wp-admin/upload.php?item=205",
+      img: "https://indraventura.wordpress.com/wp-content/uploads/2025/07/tts2-1.png",
       text: "Succès trouvé : Traitement de surface",
       link: "https://indraventura.wordpress.com/tts2/"
     },		  
