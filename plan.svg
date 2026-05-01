@@ -5,7 +5,7 @@
    viewBox="0 0 10000 10000"
    version="1.1"
    id="svg5"
-   sodipodi:docname="template_carte.svg"
+   sodipodi:docname="plan.svg"
    inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -31,7 +31,7 @@
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg5" />
+     inkscape:current-layer="layer1" />
   <!-- FOND -->
   <g
      id="fond"
@@ -122,5 +122,17 @@
        font-family="'DejaVu Sans'"
        fill="#444444"
        id="text5">Ville</text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:label="Plan">
+    <rect
+       style="fill:#000000"
+       id="rect2"
+       width="367.34573"
+       height="246.48328"
+       x="335.94052"
+       y="191.28625" />
   </g>
 </svg>
