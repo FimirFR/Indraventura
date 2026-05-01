@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
 <svg
    width="10000"
    height="10000"
-   viewBox="0 0 10000 10000"
+   viewBox="0 0 2645.8333 2645.8333"
    version="1.1"
-   id="svg5"
-   sodipodi:docname="plan.svg"
+   id="svg1"
    inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
+   sodipodi:docname="plan.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
-  <defs
-     id="defs5" />
   <sodipodi:namedview
-     id="namedview5"
+     id="namedview1"
      pagecolor="#ffffff"
      bordercolor="#000000"
      borderopacity="0.25"
@@ -22,117 +22,48 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
-     showgrid="false"
-     inkscape:zoom="1.0507812"
-     inkscape:cx="512.00002"
-     inkscape:cy="384.95169"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.081"
+     inkscape:cx="3543.2099"
+     inkscape:cy="4981.4815"
      inkscape:window-width="1920"
      inkscape:window-height="1009"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer1" />
-  <!-- FOND -->
+     inkscape:current-layer="layer5" />
+  <defs
+     id="defs1" />
   <g
-     id="fond"
-     style="display:inline">
+     inkscape:label="Fond"
+     inkscape:groupmode="layer"
+     id="layer1" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Eau" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Foret" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="Routes" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer5"
+     inkscape:label="Batiment">
     <rect
-       x="0"
-       y="0"
-       width="1024"
-       height="768"
-       fill="#f2efe9"
+       style="fill:#1a1a1a;stroke-width:0.264583"
        id="rect1"
-       style="display:inline" />
-  </g>
-  <!-- EAU -->
-  <g
-     id="eau"
-     style="display:inline">
-    <path
-       d="m 100,200 c 200,-100 400,100 700,0 V 400 H 100 Z"
-       fill="#aadaff"
-       id="path1" />
-  </g>
-  <!-- FORET -->
-  <g
-     id="foret"
-     style="display:inline">
-    <path
-       d="M 200,500 C 400,450 600,650 300,700 Z"
-       fill="#cdebb0"
-       id="path2" />
-  </g>
-  <!-- ROUTES -->
-  <g
-     id="routes"
-     style="display:inline">
-    <!-- Route principale (bordure) -->
-    <path
-       d="M 100,100 C 300,200 600,50 900,150"
-       fill="none"
-       stroke="#b5b5b5"
-       stroke-width="8"
-       stroke-linecap="round"
-       stroke-linejoin="round"
-       id="path3" />
-    <!-- Route principale (interieur) -->
-    <path
-       d="M 100,100 C 300,200 600,50 900,150"
-       fill="none"
-       stroke="#ffffff"
-       stroke-width="5"
-       stroke-linecap="round"
-       stroke-linejoin="round"
-       id="path4" />
-  </g>
-  <!-- BATIMENTS -->
-  <g
-     id="batiments"
-     style="display:inline">
-    <rect
-       x="500"
-       y="400"
-       width="80"
-       height="60"
-       fill="#d9d0c9"
-       stroke="#c0b8b0"
-       stroke-width="1"
-       id="rect4" />
-  </g>
-  <!-- LABELS -->
-  <g
-     id="labels"
-     style="display:inline">
-    <!-- Halo -->
-    <text
-       x="520"
-       y="390"
-       font-size="20px"
-       font-family="'DejaVu Sans'"
-       fill="#ffffff"
-       stroke="#ffffff"
-       stroke-width="3"
-       id="text4">Ville</text>
-    <!-- Texte -->
-    <text
-       x="520"
-       y="390"
-       font-size="20px"
-       font-family="'DejaVu Sans'"
-       fill="#444444"
-       id="text5">Ville</text>
+       width="917.87549"
+       height="548.76538"
+       x="375.64301"
+       y="761.08539" />
   </g>
   <g
      inkscape:groupmode="layer"
-     id="layer1"
-     inkscape:label="Plan">
-    <rect
-       style="fill:#000000"
-       id="rect2"
-       width="367.34573"
-       height="246.48328"
-       x="335.94052"
-       y="191.28625" />
-  </g>
+     id="layer6"
+     inkscape:label="Label" />
 </svg>
