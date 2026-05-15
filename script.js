@@ -571,12 +571,98 @@ dialogues: [
     question: "Combien y'a t il de variétés de produits non toxique dans les différentes cuves ? L'eau ne compte pas.",
     answer: "0"	
   },
+  
+  
+  
   {
     name: "La verole",
     coords: [46.598581, 1.600096],
-    text: "c'est assemblé ici, et une jolie vitrine du savoir non faire.",
-    question: "Une chaîne de -production- sert à quoi ?",
-    answer: "produire"
+dialogues: [
+      {
+        speaker: "Dex",
+        avatar: "dex.png",
+        text: "C’est quoi ce machin, exactement ?"
+      },
+      {
+        speaker: "Doc",
+        avatar: "doc.png",
+        text: "Ça, mon cher, c’est LE produit final. LE joyau industriel que l’entreprise fabrique pour vendre… et gagner de l’argent."
+      },
+      {
+        speaker: "Dingo",
+        avatar: "dingo.png",
+        text: "Oh… regardez-moi ces formes… ces courbures… cette présence… c’est presque une œuvre d’art…"
+      },
+      {
+        speaker: "Dex",
+        avatar: "dex.png",
+        text: "Une œuvre d’art ? Il est tout rayé. Là y’a même plus de peinture. Et c’est normal que ça accroche quand on passe la main dessus ? On dirait du papier de verre émotionnel."
+      },
+      {
+        speaker: "Doc",
+        avatar: "doc.png",
+        text: "Ce sont… des imperfections mineures."
+      },
+      {
+        speaker: "Dex",
+        avatar: "dex.png",
+        text: "Mineures ? Le truc a l’air d’avoir perdu un combat contre une ponceuse."
+      },
+      {
+        speaker: "Dingo",
+        avatar: "dingo.png",
+        text:  "Peut-être que ces marques racontent son histoire… son vécu industriel…"
+      },
+      {
+        speaker: "Dex",
+        avatar: "dex.png",
+        text: "Oui, son vécu de chute dans l’escalier."
+      },
+      {
+        speaker: "Doc",
+        avatar: "doc.png",
+        text: "Enfin, les clients achètent quand même."
+      },
+      {
+        speaker: "Dex",
+        avatar: "dex.png",
+        text: "Sérieusement ?"
+      },
+      {
+        speaker: "Doc",
+        avatar: "doc.png",
+        text: "Bien sûr. Sinon ils se plaindraient… et il faudrait rembourser."
+      },
+      {
+        speaker: "Dex",
+        avatar: "dex.png",
+        text: "Ah, donc le contrôle qualité repose sur “si personne hurle, c’est validé”."
+      },
+     {
+        speaker: "Dingo",
+        avatar: "dingo.png",
+        text:  "Une telle pièce… ça doit valoir une fortune…"
+      },
+      {
+        speaker: "Dex",
+        avatar: "dex.png",
+        text: "Vu la finition, j’espère que la fortune sert surtout à payer les excuses."
+      },	  
+
+      {
+        speaker: "Doc",
+        avatar: "doc.png",
+        text: "Vous ne comprenez pas la valeur du produit."
+      },
+      {
+        speaker: "Dex",
+        avatar: "dex.png",
+        text: "Si, justement. Je cherche encore où elle est. ?"
+      }
+    ],		
+    question: "Combien rapporte réelement le Produit fini par rapport aux couts de fabrication ?",
+    hint: "Rappelez vous des anges",		
+    answer: "0"
   }
 ];
 
