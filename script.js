@@ -666,6 +666,14 @@ dialogues: [
   }
 ];
 
+// === POINT FINAL CACHÉ ===
+const pointFinal = {
+  name: "La fin de journée",
+  coords: [46.597304, 1.600512]
+};
+
+let finalMarker = null;
+
 let answers = [];
 let markers = [];
 let currentStep = 0;
@@ -811,9 +819,21 @@ function checkFinal() {
 
 // === SECRET ===
 function revealSecret() {
-  L.marker([46.5981, 1.6]).addTo(map).bindPopup("🔓 Secret").openPopup();
 
-  showWin();
+  // évite de créer plusieurs fois le marqueur
+  if (finalMarker) return;
+
+  finalMarker = L.marker(pointFinal.coords)
+    .addTo(map)
+    .bindPopup(`📍 ${pointFinal.name}`);
+
+  // affiche le popup automatiquement
+  finalMarker.openPopup();
+
+  // clic sur le point => écran de victoire
+  finalMarker.on("click", () => {
+    showWin();
+  });
 }
 
 // === WIN ===
