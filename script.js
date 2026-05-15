@@ -672,11 +672,13 @@ const pointFinal = {
   coords: [46.597304, 1.600512]
 };
 
-let finalMarker = null;
-
+let currentStep = 0;
 let answers = [];
 let markers = [];
-let currentStep = 0;
+let finalMarker = null;
+
+// indique quels points sont débloqués
+let unlockedPoints = [0];
 
 // UI
 const quizBox = document.getElementById("quizBox");
@@ -701,21 +703,23 @@ points.forEach((p, i) => {
 
   markers.push(marker);
 
-  // état visuel
+  // visuel verrouillé
   if (i !== 0) {
     marker.setOpacity(0.3);
   }
 
-  // IMPORTANT : aucune ouverture automatique
   marker.closePopup();
 
   marker.on("click", function () {
-    if (i !== currentStep) {
-      alert("🔒 verrouillé");
+
+    // point encore verrouillé
+    if (!unlockedPoints.includes(i)) {
+      alert("🔒 Ce point n'est pas encore débloqué");
       return;
     }
 
-    openQuestion(i); // SEUL endroit où ça s’ouvre
+    // sinon ouverture libre
+    openQuestion(i);
   });
 });
 
@@ -725,8 +729,6 @@ function openQuestion(index) {
   quizBox.classList.remove("hidden");
 
   quizTitle.innerText = p.name; // 👈 titre ajouté
-  quizDialogues.innerHTML = "";
-
   quizDialogues.innerHTML = "";
 
   if (p.dialogues) {
@@ -766,7 +768,8 @@ function openQuestion(index) {
   }
 
   quizQuestion.innerText = p.question;
-  quizInput.value = "";
+// réaffiche l'ancienne réponse si elle existe
+quizInput.value = answers[index] || "";
 
   if (p.hint) {
     quizHint.classList.remove("hidden");
@@ -783,37 +786,60 @@ function openQuestion(index) {
     quizSuccess.classList.add("hidden");
   }
 
-  quizBtn.onclick = function () {
-    answers[index] = quizInput.value;
+quizBtn.onclick = function () {
 
-    quizBox.classList.add("hidden");
+  // sauvegarde/modification réponse
+  answers[index] = quizInput.value;
+
+  quizBox.classList.add("hidden");
+
+  // déblocage du point suivant UNIQUEMENT
+  // si on est sur le dernier point atteint dans l'ordre
+  if (index === currentStep) {
 
     currentStep++;
 
+    // débloque le suivant
     if (markers[currentStep]) {
       markers[currentStep].setOpacity(1);
-    }
 
-    if (currentStep === points.length) {
-      checkFinal();
+      if (!unlockedPoints.includes(currentStep)) {
+        unlockedPoints.push(currentStep);
+      }
     }
-  };
+  }
+
+  // vérification globale après chaque modification
+  checkFinal();
+};
 }
 
 // === VALIDATION FINALE ===
 function checkFinal() {
+
+  // tant que tous les points ne sont pas visités
+  // on ne vérifie même pas
+  if (answers.length < points.length) {
+    return;
+  }
+
   let success = true;
 
   points.forEach((p, i) => {
-    if (normalize(answers[i]) !== normalize(p.answer)) {
+
+    if (normalize(answers[i] || "") !== normalize(p.answer)) {
       success = false;
+
+      // feedback visuel rouge
+      markers[i].setOpacity(0.6);
+    } else {
+      // bonne réponse = visibilité normale
+      markers[i].setOpacity(1);
     }
   });
 
   if (success) {
     revealSecret();
-  } else {
-    alert("❌ Certaines réponses sont fausses !");
   }
 }
 
